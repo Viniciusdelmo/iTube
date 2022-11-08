@@ -1,0 +1,47 @@
+{
+  "name": "Vinícius Delmo",
+  "job": "Developer Intern",
+  "github": "Viniciusdelmo",
+  "playlists": {
+    "jogos": [
+      {
+        "title": "Frostpunk - Neve e Steak tartare",
+        "url": "https://www.youtube.com/watch?v=QsqatJxAUtk",
+        "thumb": "https://img.youtube.com/vi/QsqatJxAUtk/hqdefault.jpg"
+      },
+      {
+        "title": "Gas Station Simulator - 8 dias sem dormir!",
+        "url": "https://www.youtube.com/watch?v=R1d0DyRDG_Q",
+        "thumb": "https://img.youtube.com/vi/R1d0DyRDG_Q/hqdefault.jpg"
+      },
+      {
+        "title": "Frostpunk - Neve e Steak tartare",
+        "url": "https://www.youtube.com/watch?v=QsqatJxAUtk",
+        "thumb": "https://img.youtube.com/vi/QsqatJxAUtk/hqdefault.jpg"
+      },
+      {
+        "title": "Gas Station Simulator - 8 dias sem dormir!",
+        "url": "https://www.youtube.com/watch?v=R1d0DyRDG_Q",
+        "thumb": "https://img.youtube.com/vi/R1d0DyRDG_Q/hqdefault.jpg"
+      }
+    ],
+    "front-end": [
+      {
+        "title": "Jogo com JavaScript #01: Criando um Flappy Bird do ZERO!!!",
+        "url": "https://youtube.com/watch?v=jOAU81jdi-c",
+        "thumb": "https://img.youtube.com/vi/jOAU81jdi-c/hqdefault.jpg"
+      },
+      {
+        "title": "Jogo com JavaScript #01: Criando um Flappy Bird do ZERO!!!",
+        "url": "https://youtube.com/watch?v=jOAU81jdi-c",
+        "thumb": "https://img.youtube.com/vi/jOAU81jdi-c/hqdefault.jpg"
+      },
+      {
+        "title": "Jogo com JavaScript #01: Criando um Flappy Bird do ZERO!!!",
+        "url": "https://youtube.com/watch?v=jOAU81jdi-c",
+        "thumb": "https://img.youtube.com/vi/jOAU81jdi-c/hqdefault.jpg"
+      }
+      
+    ]
+  }
+}
