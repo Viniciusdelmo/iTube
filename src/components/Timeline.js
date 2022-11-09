@@ -32,6 +32,7 @@ export const StyledTimeline = styled.div`
       grid-auto-flow: column;
       grid-auto-columns: minmax(200px,1fr);
       overflow-x: scroll;
+      }
       scroll-snap-type: x mandatory;
       a {
         scroll-snap-align: start;
@@ -43,5 +44,4 @@ export const StyledTimeline = styled.div`
         }
       }
     }
-  }
 `;
