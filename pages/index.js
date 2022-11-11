@@ -1,17 +1,45 @@
 import React from "react";
 import config from "../config.json";
 import styled from "styled-components";
-
-
 import Menu from "../src/components/Menu/index";
 import { StyledTimeline } from "../src/components/Timeline";
+import { videoService } from "../src/services/videoService";
+
+
+
 
 function HomePage() {
-  const estiloDaHomePage = {
+  const service = videoService();
+ // const estiloDaHomePage = {
     //backgroundColor: "red"
-  };
+ // };
   //console.log(config.playlists);
   const [valorDoFiltro, setValorDoFiltro] = React.useState("");
+  //const playlists = {
+  //  "jogos": []
+  //};
+  const [playlists, setPlaylists] = React.useState({}); 
+  React.useEffect(()=>{
+    console.log("useEffect");
+    service
+    .getAllVideos()
+    .then((dados) => {
+      console.log(dados.data);
+      const novasPlaylists = {};
+      dados.data.forEach((video) => {
+        if (!novasPlaylists[video.playlist]) novasPlaylists[video.playlist] = [];
+        novasPlaylists[video.playlist]=[
+          video,
+          ...novasPlaylists[video.playlist]
+        ];
+      });
+      setPlaylists(novasPlaylists);
+    });
+
+   
+  }, []);
+
+  console.log("Playlists Pronto",playlists);
 
   return (
     <>
@@ -28,7 +56,7 @@ function HomePage() {
           setValorDoFiltro={setValorDoFiltro}
         />
         <Header />
-        <Timeline searchValue={valorDoFiltro} playlists={config.playlists}>
+        <Timeline searchValue={valorDoFiltro} playlists={playlists}>
           Conteúdo
         </Timeline>
       </div>
